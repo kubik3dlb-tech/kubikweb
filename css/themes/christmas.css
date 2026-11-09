@@ -1,0 +1,67 @@
+/* Christmas theme: same brown/beige/black base, plus green, red and gold accents.
+   Only active when <html data-theme="christmas">. */
+[data-theme="christmas"] {
+  --announce-bg: var(--color-green);
+  --announce-text: var(--color-cream);
+
+  --hero-bg: var(--color-green);
+  --hero-text: var(--color-cream);
+  --hero-eyebrow: var(--color-gold);
+  --hero-btn-bg: var(--color-gold);
+  --hero-btn-text: var(--color-black);
+
+  --strip-bg: var(--color-red);
+  --strip-text: var(--color-cream);
+
+  --footer-accent: var(--color-gold);
+  --footer-heading: var(--color-gold);
+
+  --badge-gift-bg: var(--color-red);
+  --deco-accent: var(--color-gold);
+  --panel-dark-bg: var(--color-green);
+}
+
+/* Festive hero: soft dotted "snow" pattern + candy-cane stripe along the bottom */
+[data-theme="christmas"] .hero {
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(255,255,255,.14) 0 2px, transparent 3px),
+    radial-gradient(circle at 78% 30%, rgba(255,255,255,.12) 0 3px, transparent 4px),
+    radial-gradient(circle at 40% 82%, rgba(255,255,255,.1) 0 2px, transparent 3px),
+    radial-gradient(circle at 90% 85%, rgba(201,162,75,.2) 0 3px, transparent 4px);
+}
+[data-theme="christmas"] .hero { border-bottom: 1px solid var(--color-gold); }
+
+/* The village photo: framed in gold, with a warm glow that slowly breathes like the lit houses */
+@keyframes xmas-glow {
+  0%, 100% { box-shadow: 0 0 0 1px rgba(201,162,75,.55), 0 18px 50px rgba(0,0,0,.35), 0 0 40px rgba(255,184,77,.22); }
+  50%      { box-shadow: 0 0 0 1px rgba(201,162,75,.85), 0 18px 50px rgba(0,0,0,.35), 0 0 80px rgba(255,184,77,.42); }
+}
+[data-theme="christmas"] .hero__media {
+  position: relative; aspect-ratio: 4 / 3; border-radius: var(--radius-lg);
+  animation: xmas-glow 5s ease-in-out infinite;
+}
+/* Soft vignette so the photo's edges melt into the frame */
+[data-theme="christmas"] .hero__media::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; border-radius: inherit;
+  background: radial-gradient(ellipse at 50% 60%, transparent 55%, rgba(10,18,14,.45) 100%);
+}
+@media (prefers-reduced-motion: reduce) { [data-theme="christmas"] .hero__media { animation: none; } }
+
+/* ==========================================================================
+   Christmas extras: string lights, hanging baubles, stripes, ornaments
+   ========================================================================== */
+@keyframes xmas-twinkle { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
+
+/* Footer: a single fine gold line */
+[data-theme="christmas"] .site-footer { border-top: 2px solid var(--color-gold); }
+
+/* Ornamental touches */
+[data-theme="christmas"] .eyebrow::before { content: "✦ "; color: var(--color-gold); }
+[data-theme="christmas"] .section__head h2::after {
+  content: ""; display: block; width: 64px; height: 3px; margin-top: .6rem; border-radius: 3px;
+  background: linear-gradient(90deg, var(--color-red), var(--color-gold), var(--color-green));
+}
+[data-theme="christmas"] .product-card:hover { box-shadow: 0 0 0 1px var(--color-gold), var(--shadow); }
+[data-theme="christmas"] .tile:hover { box-shadow: 0 0 0 3px var(--color-gold), var(--shadow); }
+[data-theme="christmas"] .step__num { background: var(--color-red); }
+[data-theme="christmas"] .trust__icon { color: var(--color-green); }

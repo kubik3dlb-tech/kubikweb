@@ -1,0 +1,68 @@
+[
+  {
+    "slug": "christmas",
+    "name_en": "Christmas Collection",
+    "name_ar": "مجموعة الميلاد",
+    "description_en": "Ornaments, lights and gifts to make your home feel like Christmas.",
+    "description_ar": "زينة وإضاءة وهدايا تعطي بيتك أجواء الميلاد.",
+    "image": "assets/images/collection-christmas.jpg",
+    "seasonal": "TRUE",
+    "active": "TRUE",
+    "sort_order": 1
+  },
+  {
+    "slug": "home-decor",
+    "name_en": "Home Decor",
+    "name_ar": "ديكور المنزل",
+    "description_en": "Small details that make a house feel like home.",
+    "description_ar": "تفاصيل صغيرة تجعل المنزل أكثر دفئاً.",
+    "image": "assets/images/collection-home-decor.jpg",
+    "seasonal": "FALSE",
+    "active": "TRUE",
+    "sort_order": 2
+  },
+  {
+    "slug": "lighting",
+    "name_en": "Lighting",
+    "name_ar": "إضاءة",
+    "description_en": "Warm, glowing pieces for cozy evenings.",
+    "description_ar": "قطع مضيئة دافئة لأمسيات هادئة.",
+    "image": "assets/images/collection-lighting.jpg",
+    "seasonal": "FALSE",
+    "active": "TRUE",
+    "sort_order": 3
+  },
+  {
+    "slug": "gifts",
+    "name_en": "Gifts",
+    "name_ar": "هدايا",
+    "description_en": "Thoughtful, gift-ready pieces for the people you love.",
+    "description_ar": "هدايا مدروسة وجاهزة للتقديم لمن تحب.",
+    "image": "assets/images/collection-gifts.jpg",
+    "seasonal": "FALSE",
+    "active": "TRUE",
+    "sort_order": 4
+  },
+  {
+    "slug": "accessories",
+    "name_en": "Accessories",
+    "name_ar": "إكسسوارات",
+    "description_en": "Everyday pieces with a handmade touch.",
+    "description_ar": "قطع يومية بلمسة يدوية.",
+    "image": "assets/images/collection-accessories.svg",
+    "seasonal": "FALSE",
+    "active": "FALSE",
+    "sort_order": 5
+  },
+  {
+    "slug": "coming-soon",
+    "name_en": "Coming Soon",
+    "name_ar": "قريباً",
+    "description_en": "A peek at what we are printing next.",
+    "description_ar": "نظرة على ما نطبعه قريباً.",
+    "image": "assets/images/collection-coming-soon.svg",
+    "seasonal": "FALSE",
+    "active": "FALSE",
+    "sort_order": 6
+  }
+]

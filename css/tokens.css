@@ -1,0 +1,114 @@
+/* ==========================================================================
+   KUBIK 3D design tokens.
+   Layer 1: raw palette. Layer 2: semantic tokens (what components use).
+   Components must only use semantic tokens so themes can override them.
+   ========================================================================== */
+:root {
+  /* ---- Raw palette ---- */
+  --color-black: #1A1614;
+  --color-espresso: #3B2A20;
+  --color-brown: #6B4A35;
+  --color-caramel: #A8774F;
+  --color-caramel-dark: #8A5A34; /* AA-safe caramel for text on cream (5.2:1) */
+  --color-beige: #E8DCC7;
+  --color-cream: #F7F2EA;
+  --color-white: #FFFFFF;
+  --color-sale: #9E3B2C;
+  --color-success: #4F6B3A;
+  /* Seasonal accents (used by themes) */
+  --color-green: #2F4A3A;
+  --color-red: #8E2A22;
+  --color-gold: #C9A24B;
+
+  /* ---- Semantic tokens ---- */
+  --bg-page: var(--color-cream);
+  --bg-section: var(--color-beige);
+  --bg-card: var(--color-white);
+  --text: var(--color-black);
+  --text-muted: #5E4A3C;
+  --text-on-dark: var(--color-cream);
+  --link: var(--color-caramel-dark);
+  --accent: var(--color-caramel);
+  --accent-text: var(--color-caramel-dark);
+  --border: rgba(59, 42, 32, .14);
+
+  --btn-bg: var(--color-espresso);
+  --btn-text: var(--color-cream);
+  --btn-bg-hover: var(--color-brown);
+  --btn-outline: var(--color-espresso);
+
+  --announce-bg: var(--color-black);
+  --announce-text: var(--color-cream);
+  --header-bg: var(--color-cream);
+  --header-text: var(--color-black);
+  --footer-bg: var(--color-black);
+  --footer-text: #D8CDBB;
+  --footer-heading: var(--color-cream);
+  --footer-accent: var(--color-caramel);
+
+  --hero-bg: var(--color-beige);
+  --hero-text: var(--color-black);
+  --hero-eyebrow: var(--color-caramel-dark);
+  --hero-btn-bg: var(--color-espresso);
+  --hero-btn-text: var(--color-cream);
+
+  --strip-bg: var(--color-espresso);
+  --strip-text: var(--color-cream);
+  --panel-dark-bg: var(--color-espresso);   /* "Send a gift" panel */
+  --panel-dark-text: var(--color-cream);
+
+  --badge-bg: var(--color-caramel-dark);
+  --badge-text: var(--color-white);
+  --badge-gift-bg: var(--color-brown);
+  --badge-sale-bg: var(--color-sale);
+  --price-sale: var(--color-sale);
+  --focus-ring: var(--color-caramel-dark);
+  --deco-accent: var(--color-caramel);      /* product card decoration accent */
+
+  /* ---- Typography ---- */
+  --font-heading: "Fraunces", "Playfair Display", Georgia, serif;
+  --font-body: "DM Sans", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fs-sm: .875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-h3: clamp(1.15rem, 1rem + .6vw, 1.4rem);
+  --fs-h2: clamp(1.6rem, 1.2rem + 1.8vw, 2.4rem);
+  --fs-h1: clamp(2.1rem, 1.5rem + 3vw, 3.6rem);
+
+  /* ---- Shape, space, depth ---- */
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --container: 1200px;
+  --gutter: 1rem;
+  --shadow-sm: 0 1px 2px rgba(26, 22, 20, .06), 0 2px 8px rgba(26, 22, 20, .05);
+  --shadow: 0 4px 16px rgba(59, 42, 32, .10);
+  --shadow-lg: 0 14px 40px rgba(59, 42, 32, .16);
+  --ease: cubic-bezier(.22, .61, .36, 1);
+  --dur: .25s;
+  --z-header: 50;
+  --z-float: 60;
+  --z-toast: 90;
+
+  /* Paper grain for beige sections (inline SVG noise, very subtle) */
+  --grain: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42 0 0 0 0 .29 0 0 0 0 .21 0 0 0 .09 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+/* Arabic uses Tajawal for both headings and body */
+html[lang="ar"] {
+  --font-heading: "Tajawal", "Cairo", system-ui, sans-serif;
+  --font-body: "Tajawal", "Cairo", system-ui, sans-serif;
+}
+
+@media (min-width: 768px) {
+  :root { --gutter: 1.5rem; }
+}

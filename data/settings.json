@@ -1,0 +1,23 @@
+{
+  "theme": "christmas",
+  "logo_override": "",
+  "announcement_en": "Cash on delivery all over Lebanon",
+  "hero_title_en": "",
+  "hero_subtitle_en": "",
+  "hero_image": "",
+  "hero_cta_link": "",
+  "order_deadline_text": "Order before Dec 20 for delivery before Christmas",
+  "order_deadline_date": "2026-12-20",
+  "delivery_fee_default": 5,
+  "delivery_areas": "{\"Beirut\":5,\"Mount Lebanon\":5,\"North\":5,\"South\":5,\"Bekaa\":5}",
+  "whatsapp_number": "96171804746",
+  "instagram_url": "https://www.instagram.com/kubik3d.lb/",
+  "reel_1_url": "https://www.instagram.com/reel/DfNbXIds2tx/",
+  "reel_1_image": "assets/images/reels/reel-1.jpg",
+  "reel_2_url": "",
+  "reel_2_image": "",
+  "reel_3_url": "",
+  "reel_3_image": "",
+  "facebook_url": "https://www.facebook.com/share/1EwiBXEBB6/?mibextid=wwXlfr",
+  "tiktok_url": "https://www.tiktok.com/@kubik3d.lb"
+}

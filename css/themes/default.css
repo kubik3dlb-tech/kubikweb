@@ -1,0 +1,6 @@
+/* Default (year-round) theme.
+   tokens.css already defines the default look, so nothing is overridden here.
+   Kept as an explicit file so every theme has a home. */
+[data-theme="default"] {
+  /* no overrides */
+}

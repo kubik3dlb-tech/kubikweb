@@ -1,0 +1,9 @@
+/* Valentine theme: PLACEHOLDER. Full design comes in Phase 7.
+   Activates with settings.theme = "valentine". */
+[data-theme="valentine"] {
+  --announce-bg: #7A2E3B;
+  --hero-bg: #EBD3D0;
+  --strip-bg: #7A2E3B;
+  --badge-gift-bg: #7A2E3B;
+  --deco-accent: #B8566A;
+}

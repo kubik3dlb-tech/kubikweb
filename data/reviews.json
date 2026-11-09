@@ -1,0 +1,29 @@
+[
+  {
+    "active": "FALSE",
+    "name": "Customer name",
+    "area": "City",
+    "rating": 5,
+    "product": "Product name",
+    "text": "Placeholder: replace this with a real comment from one of your customers.",
+    "sort_order": 1
+  },
+  {
+    "active": "FALSE",
+    "name": "Customer name",
+    "area": "City",
+    "rating": 5,
+    "product": "Product name",
+    "text": "Placeholder: replace this with a real comment from one of your customers.",
+    "sort_order": 2
+  },
+  {
+    "active": "FALSE",
+    "name": "Customer name",
+    "area": "City",
+    "rating": 5,
+    "product": "Product name",
+    "text": "Placeholder: replace this with a real comment from one of your customers.",
+    "sort_order": 3
+  }
+]
